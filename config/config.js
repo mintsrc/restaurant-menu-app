@@ -1,10 +1,10 @@
 const config = {
   bucket: {
-    slug: 'restaurant-menu-app',
-    read_key: 'DSTjEtUhwVUe2WS3pwnZl36rQf5qiRVWVuSraQw7atHpd8XUIA',
-    write_key: 'MjgkxDPTFACpycQpTsPeBDbOYBObzdY7g8PfYuPnQ76DVb5kxA'
+    slug: process.env.COSMICJS_BUCKET_SLUG,
+    read_key: process.env.COSMICJS_READ_KEY,
+    write_key: process.env.COSMICJS_WRITE_KEY
   },
-  object_type: 'menus'
-}
+  object_type: "menus"
+};
 
-export default config
+export default config;
