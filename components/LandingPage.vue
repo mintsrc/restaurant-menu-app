@@ -51,7 +51,7 @@ export default {
     ]),
     selectedDate: {
       get: function () {
-        return new Date(this.$store.state.selectedDate)
+        return this.$store.state.selectedDate
       },
       set: function (value) {
         this.$store.dispatch('setSelectedDate', value)

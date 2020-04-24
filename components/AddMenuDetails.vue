@@ -76,11 +76,6 @@
                     
                   <div class="box" v-for="(item,index) in category.menuItems" :key="index">
                     <article class="media">
-                      <div class="media-left">
-                        <figure class="image menu-item-image">
-                          <img :src="item.feature_image.url" :alt="item.title" :title="item.title">
-                        </figure>
-                      </div>
                       <div class="media-content">
                         <div class="content">
                           <div class="columns menu-item-info">

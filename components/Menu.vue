@@ -20,13 +20,6 @@
         <h3>{{category.title}}</h3>
         <div class="box" v-for="(item,index) in category.menuItems" :key="index">
           <article class="media">
-            <div class="media-left">
-              <figure class="image menu-item-image">
-                <a @click="openImageModel(item.feature_image.url)">
-                  <img :src="item.feature_image.url" :alt="item.title" :title="item.title" >
-                </a>
-              </figure>
-            </div>
             <div class="media-content">
               <div class="content">
                 <div class="columns menu-item-info">

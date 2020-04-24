@@ -16,7 +16,7 @@ First of all, you have to be sure you have node > 6.x installed, than run the fo
 
 ```javascript
 npm install -g vue-cli
-git clone https://github.com/jazibsawar/restaurant-menu-app
+git clone https://github.com/jazibsawar/cottage-tavern-menu
 cd restaurant-menu-app
 npm install
 npm run dev
@@ -28,7 +28,7 @@ After successfull completion of the last command browser window will automatical
 
 ```javascript
 {
-  "name": "restaurant-menu-app",
+  "name": "cottage-tavern-menu",
   "version": "1.0.0",
   "description": "Cosmic Restaurant Menu App",
   "author": "BitBytes",

@@ -29,17 +29,6 @@
             required>
         </b-input>
     </b-field>
-    <b-field >
-      <img style="height: 25%; width: 25%;" class="upload_image" :src="menuItem.feature_image.url.replace(/ /g,'%20')" v-if="!!menuItem.feature_image.url" />
-      <form enctype="multipart/form-data" novalidate>
-      <input type="file" @change="onFileChange" accept="image/*" data-vv-name="image" v-validate="'required|mimes:image/*'" required />
-      <div class="input-group fileUploadError">
-          <div class="input-group__error" v-show="errors.has('image') && !edittingMenuItem">
-          {{ errors.first('image') }}
-          </div>
-      </div>
-      </form>
-    </b-field>
     <div v-show="menuItemStatus.error" class="field is-danger" >
       {{ menuItemStatus.error }}
     </div>
