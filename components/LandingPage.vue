@@ -51,7 +51,7 @@ export default {
     ]),
     selectedDate: {
       get: function () {
-        return this.$store.state.selectedDate
+        return new Date(this.$store.state.selectedDate)
       },
       set: function (value) {
         this.$store.dispatch('setSelectedDate', value)
@@ -95,5 +95,5 @@ export default {
  .menu-date-picker >>> .input.is-hovered, .menu-date-picker >>> .input:hover {
     border-color: #dbdbdb;
  }
-  
+
 </style>

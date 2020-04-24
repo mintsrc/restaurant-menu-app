@@ -6,7 +6,7 @@
       </header>
       <section class="modal-card-body menu-modal-body">
           <b-field label="Select a date" :message="errors.collect('date')" >
-            <b-datepicker v-model="menu.metadata.date"
+            <b-datepicker v-model="menuDate"
                 :first-day-of-week="1"
                 placeholder="Click to select"
                 v-validate="'required'" data-vv-name="date"
@@ -54,6 +54,9 @@ export default {
     ...mapGetters([
       'menu', 'status', 'editting'
     ]),
+    menuDate: function() {
+      return new Date(this.menu.metadata.date)
+    },
     addMenu: {
       get: function () {
         return this.$store.state.addMenu
@@ -80,7 +83,12 @@ export default {
           this.$store.dispatch('addMenu', menu)
         }
       }
-    }
+    },
+    formatDate(value){
+      if (value) {
+        return value;
+      }
+    },
   }
 }
 </script>

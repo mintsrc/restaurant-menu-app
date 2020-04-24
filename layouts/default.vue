@@ -24,9 +24,9 @@
 </template>
 
 <script>
-  import store from '~/store/store'
+  import store from '~/store/index'
   import('~/node_modules/font-awesome/css/font-awesome.css')
-  
+
   export default {
     store,
     mounted: function () {
