@@ -1,10 +1,11 @@
 const config = {
   bucket: {
-    slug: process.env.COSMICJS_BUCKET_SLUG,
-    read_key: process.env.COSMICJS_READ_KEY,
-    write_key: process.env.COSMICJS_WRITE_KEY
+    slug: process.env.slug,
+    read_key: process.env.read_key,
+    write_key: process.env.write_key
   },
-  object_type: "menus"
+  object_type: "menus",
+  token: process.env.token
 };
 
 export default config;
